@@ -1,0 +1,37 @@
+.the_city_plaza_widget {
+  
+}
+
+.the_city_plaza_widget .tc_wp_content {
+  list-style-type: none;
+  margin-left: 0 !important;
+  margin-bottom: 30px;
+  font-size: 13px;
+}
+
+.the_city_plaza_widget .widget-title {
+  font-size: 14px;
+  font-weight: bold;
+  border-bottom: 1px solid #333333;
+  line-height: 1.4;
+  padding-bottom: 5px;  
+  margin-bottom: .5em;
+}
+
+
+.the_city_plaza_widget .tc_wp_content .tc_wp_item {
+  margin-bottom: 10px;
+}
+
+
+.the_city_plaza_widget .tc_wp_content .tc_wp_item .tc_wp_link {
+  font-size: 13px;
+}
+
+.the_city_plaza_widget .tc_wp_content .tc_wp_item .tc_wp_date {
+  font-size: 11px;
+  display: block;
+  line-height: 1.2;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
