@@ -29,7 +29,8 @@ class The_City_Login_Widget extends WP_Widget {
 
     $subdomain_key = strip_tags($instance['subdomain_key']);
     $login_display_choice = strip_tags($instance['login_display_choice']);
-
+    $show_remember_me = strip_tags($instance['show_remember_me']);
+    $use_placeholder_text = strip_tags($instance['use_placeholder_text']);
     ?>
 
    <p>
@@ -47,7 +48,7 @@ class The_City_Login_Widget extends WP_Widget {
 
     <?php 
       $plain_s = $inline_s = '';
-      switch($instance['plaza_display']) {
+      switch($instance['login_display_choice']) {
         case 'plain':
           $plain_s = 'selected="selected"'; 
           break;
@@ -68,6 +69,27 @@ class The_City_Login_Widget extends WP_Widget {
         </select>
       </label>    
     </p>    
+
+    <?php $show_remember_me_checked = empty($show_remember_me) ? '' : 'checked="checked"'; ?>
+    <p>
+      <label for="<?php echo $this->get_field_id('show_remember_me'); ?>">
+        <input type="checkbox" 
+               id="<?php echo $this->get_field_id('show_remember_me'); ?>" 
+               name="<?php echo $this->get_field_name('show_remember_me'); ?>"
+               <?php echo $show_remember_me_checked ?> /> Show Remember me checkbox       
+      </label>
+    <p>
+
+    <?php $use_placeholder_text_checked = empty($use_placeholder_text) ? '' : 'checked="checked"'; ?>
+    <p>
+      <label for="<?php echo $this->get_field_id('use_placeholder_text'); ?>">
+        <input type="checkbox" 
+               id="<?php echo $this->get_field_id('use_placeholder_text'); ?>" 
+               name="<?php echo $this->get_field_name('use_placeholder_text'); ?>"
+               <?php echo $use_placeholder_text_checked ?> /> Use placeholder text       
+      </label>
+    <p>      
+
     <?php
   }
   
@@ -76,6 +98,8 @@ class The_City_Login_Widget extends WP_Widget {
     $instance = $old_instance;
     $instance['subdomain_key'] = strip_tags($new_instance['subdomain_key']);
     $instance['login_display_choice'] = strip_tags($new_instance['login_display_choice']);
+    $instance['show_remember_me'] = strip_tags($new_instance['show_remember_me']);
+    $instance['use_placeholder_text'] = strip_tags($new_instance['use_placeholder_text']);
     return $instance;
   }
   
@@ -85,6 +109,8 @@ class The_City_Login_Widget extends WP_Widget {
     extract($args);
     $subdomain_key = empty($instance['subdomain_key']) ? ' ' : $instance['subdomain_key'];
     $login_display_choice = empty($instance['login_display_choice']) ? 'plain' : $instance['login_display_choice'];
+    $show_remember_me = empty($instance['show_remember_me']) ? ' ' : $instance['show_remember_me'];
+    $use_placeholder_text = empty($instance['use_placeholder_text']) ? ' ' : $instance['use_placeholder_text'];
     include dirname(__FILE__).'/widget_info.php';
     echo $after_widget;
   }

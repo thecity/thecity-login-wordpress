@@ -4,7 +4,9 @@
 TheCityLogin = {
   defaults : { 'subdomain' : null,
                'city_login_div_id' : 'thecity_login',
-               'display_form_loading_message' : true},
+               'display_form_loading_message' : true,
+               'show_remember_me' : true,
+               'use_placeholder_text' : false},
                
   _class_vars : {'login_form_url' : 'http://authentication.onthecity.org/sessions/remote_form.json?callback=?',
                  'login_url' : 'http://authentication.onthecity.org/sessions/remote_login.json?callback=?'}, 
@@ -34,6 +36,17 @@ TheCityLogin = {
         form = form.replace(/[\r\n]/g, '');
         form = $.base64.decode(form);
         $('#'+self.defaults['city_login_div_id']).html(form);
+
+        if(!self.defaults['show_remember_me']) {
+          $('#'+self.defaults['city_login_div_id']+' #authcity #remember-me').hide();
+        }
+
+        if(self.defaults['use_placeholder_text']) {
+          $('#'+self.defaults['city_login_div_id']+' label[for="login"]').hide();
+          $('#'+self.defaults['city_login_div_id']+' label[for="password"]').hide();
+          $('#'+self.defaults['city_login_div_id']+' #authcity #login').attr('placeholder','Login');
+          $('#'+self.defaults['city_login_div_id']+' #authcity #password').attr('placeholder','Password');
+        }
         
         self._add_meta_tag_csrf_token();
         self._add_login_link_listener();
