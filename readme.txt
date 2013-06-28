@@ -73,4 +73,4 @@ None yet...
 == Changelog ==
 
 = 0.1 =
-* Initial release of the Plaza-Wordpress plugin.
+* Initial release of the Login-Wordpress plugin.
