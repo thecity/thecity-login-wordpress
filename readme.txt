@@ -60,7 +60,7 @@ https://github.com/thecity/thecity-login-wordpress/issues
 == Screenshots ==
 
 Here is the link to the description of the plugin:
-http://developer.onthecity.org/thecity-plugins/wordpress/login
+http://developer.onthecity.org/thecity-plugins/wordpress-login/
 
 
 == Upgrade Notice == 
