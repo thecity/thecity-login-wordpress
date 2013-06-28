@@ -27,7 +27,7 @@ Install manually:
 == Screenshots
 
 Here is the link to the description of the plugin:
-http://developer.onthecity.org/thecity-plugins/the-city-login-wordpress/
+http://developer.onthecity.org/thecity-plugins/wordpress-login/
 
 
 
