@@ -4,12 +4,10 @@ Tags: city, thecity, onthecity, login, acs
 Requires at least: 2.8
 Tested up to: 3.5.1
 Stable tag: 0.1
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 A WordPress plugin that allows users to login directly to The City from your WordPress website.
-
-=== Plugin Name ===
-
-The City Login
 
 == Description ==
 
