@@ -1,12 +1,10 @@
 <?php
 
-function thecity_login_wordpress_scripts() {  
-  wp_register_script('thecity_login_tc_base64_js', plugins_url('/the-city-login/scripts/tc_base64.js'));   
+function thecity_login_wordpress_scripts() {     
   wp_register_script('thecity_login_js', plugins_url('/the-city-login/scripts/thecity_login.js'));   
   wp_register_script('thecity_login_load_js', plugins_url('/the-city-login/scripts/thecity_login_load.js')); 
 
   wp_enqueue_script( array('jquery') );  
-  wp_enqueue_script('thecity_login_tc_base64_js');  
   wp_enqueue_script('thecity_login_js');    
   wp_enqueue_script('thecity_login_load_js');  
 }
