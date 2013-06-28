@@ -7,6 +7,9 @@ Stable tag: 0.1
 
 A WordPress plugin that allows users to login directly to The City from your WordPress website.
 
+=== Plugin Name ===
+
+The City Login
 
 == Description ==
 
