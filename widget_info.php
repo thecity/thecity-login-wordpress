@@ -14,7 +14,7 @@
       $form_display = 'thecity_login_normal_plain';
   }
 
-  if( empty($subdomain_key)) { echo 'Subdomain not set'; } else {  ?>
+  if( empty($subdomain_key)) { echo 'City subdomain not set'; } else {  ?>
   <div id="thecity_login" 
        class="<?php echo $form_display; ?>" 
        subdomain="<?php echo $subdomain_key; ?>" 
