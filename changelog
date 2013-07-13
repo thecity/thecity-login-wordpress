@@ -1,2 +1,9 @@
 0.1
 * Initial release of the TheCity-Login-Wordpress plugin.
+
+0.2
+* Fix issue if widget was not on page "Subdomain not set" was displayed.
+
+0.3
+* Merged in @markjflores design additions to use The City styling.
+* Refactored login class to extract out designs.
