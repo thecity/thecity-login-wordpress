@@ -4,7 +4,7 @@ Plugin Name: The City Login Widget
 Plugin URI: http://developer.onthecity.org/thecity-plugins/wordpress-login/
 Description: A WordPress plugin that allows users to login directly to The City from your WordPress website.
 Author: Wes Hays
-Version: 0.2
+Version: 0.3
 Author URI: http://www.OnTheCity.org
 */
 
