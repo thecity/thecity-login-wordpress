@@ -6,11 +6,23 @@
 
   $form_display = '';
   switch($login_display_choice) {
+    case "plain":
+      $form_display = 'thecity_login_normal_plain';
+      break;
+
     case "inline":
       $form_display = 'thecity_login_inline_plain';
       break;
 
-    default: // normal
+    case "city_style_normal":
+      $form_display = 'city_style_normal';
+      break;  
+
+    case "city_style_inline":
+      $form_display = 'city_style_inline';
+      break;        
+
+    default: // plane
       $form_display = 'thecity_login_normal_plain';
   }
 

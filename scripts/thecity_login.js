@@ -50,6 +50,7 @@ TheCityLogin = {
         
         self._add_meta_tag_csrf_token();
         self._add_login_link_listener();
+        self._apply_styling_formatter();
       }
     )   
   },
@@ -92,6 +93,11 @@ TheCityLogin = {
         }          
       });      
     });
+  },
+
+  _apply_styling_formatter : function() {
+    var func = 'formatter_' + this.defaults['display_style'];
+    if (typeof(eval(func)) === 'function') { window[func](this); }
   }
   
 }

@@ -55,6 +55,12 @@ class The_City_Login_Widget extends WP_Widget {
         case 'inline':
           $inline_s = 'selected="selected"'; 
           break;
+        case 'city_style_normal':
+          $city_style_normal = 'selected="selected"'; 
+          break;
+        case 'city_style_inline':
+          $city_style_inline = 'selected="selected"'; 
+          break;
       }
     ?> 
 
@@ -66,6 +72,8 @@ class The_City_Login_Widget extends WP_Widget {
                 name="<?php echo $this->get_field_name('login_display_choice'); ?>">
             <option value="plain" <?php echo $plain_s; ?> >Plain</option>
         		<option value="inline" <?php echo $inline_s; ?> >Inline</option>
+            <option value="city_style_normal" <?php echo $city_style_normal; ?> >City Style Normal</option>
+            <option value="city_style_inline" <?php echo $city_style_inline; ?> >City Style Inline</option>
         </select>
       </label>    
     </p>    
