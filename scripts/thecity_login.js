@@ -97,7 +97,7 @@ TheCityLogin = {
 
   _apply_styling_formatter : function() {
     var func = 'formatter_' + this.defaults['display_style'];
-    if (typeof(eval(func)) === 'function') { window[func](this); }
+    if (typeof(window[func]) === 'function') { window[func](this); }
   }
   
 }
