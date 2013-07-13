@@ -30,6 +30,10 @@ Here is the link to the description of the plugin:
 http://developer.onthecity.org/thecity-plugins/wordpress-login/
 
 
+== Contributors
+
+Mark Flores: https://github.com/markjflores
+
 
 == Contributing
 
